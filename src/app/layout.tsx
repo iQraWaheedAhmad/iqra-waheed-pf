@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   description:
     "Iqra Waheed is a Front-End Developer based in Lahore, Pakistan, building responsive, component-driven web apps with React, Next.js, and Tailwind CSS.",
   metadataBase: new URL("https://iqrawaheed.dev"),
+  icons: {
+    icon: "/favicon.png",
+  },
   openGraph: {
     title: "Iqra Waheed — Front-End Developer",
     description:
