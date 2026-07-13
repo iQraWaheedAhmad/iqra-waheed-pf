@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { supabase } from "@/lib/supabaseClient";
+import { supabaseAdmin } from "@/lib/supabaseClient";
 import nodemailer from "nodemailer";
 
 export async function POST(request: Request) {
@@ -15,7 +15,7 @@ export async function POST(request: Request) {
     }
 
     // 2. Save submission to Supabase contact_submissions table
-    const { data: dbData, error: dbError } = await supabase
+    const { data: dbData, error: dbError } = await supabaseAdmin
       .from("contact_submissions")
       .insert([
         {
